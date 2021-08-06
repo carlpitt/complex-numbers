@@ -1,19 +1,9 @@
 package Java.Complex;
 
-// https://faculty.ncssm.edu/~morrison/complexPlacement/complex.pdf
-
 public class Complex implements IComplex 
 {
-    public static final Complex ZERO = new Complex(), ONE = new Complex(1), I = new Complex(0, 1);
+    public static final Complex ZERO = new Complex(), ONE = new Complex(1.0), I = new Complex(0.0, 1.0);
     private double re, im;
-    
-    /*
-    static {
-        ZERO = null;
-        ONE = null;
-        I = null;
-    }
-    */
 
     public Complex(double re, double im) {
         this.re = re;
@@ -21,11 +11,11 @@ public class Complex implements IComplex
     }
     public Complex(double re) {
         this.re = re;
-        this.im = 0;
+        this.im = 0.0;
     }
     public Complex() {
-        this.re = 0;
-        this.im = 0;
+        this.re = 0.0;
+        this.im = 0.0;
     }
 
 
@@ -74,7 +64,7 @@ public class Complex implements IComplex
             n = -n;
         }
 
-        Complex result = new Complex(1);
+        Complex result = new Complex(1.0);
         double t;
         while (n > 1) {
             if ((n & 1) == 1) {
