@@ -20,7 +20,7 @@ public class Main {
         System.out.println(c.Arg());
         // 0.7853981633974484
 
-        Complex d = new Complex(-1,1);
+        Complex d = new Complex(-1, 1);
         System.out.println(d.Arg());
         // 2.356194490192345
         System.out.println(d.Arg() / Math.PI);
